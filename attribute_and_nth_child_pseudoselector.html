@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background: url('newYork.jpg');
+            background-repeat: no-repeat;
+            background-size: 100em; */
+
+            /* background: url('train.jpg');
+            position: absolute; */
+            
+            background-color: black;
+            color: white;
+        }
+        /* div::before{
+            background: url('train.jpg');
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+        } */
+        .container{
+            display: flex;
+        } 
+        .navigation{
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            list-style: none;
+            margin: 10px 10px;
+        }
+        .section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul class="navigation">
+                <li class="navigation_lst" id="nav1">Home</li>
+                <li class="navigation_lst" id="nav2">About</li>
+                <li class="navigation_lst" id="nav3">Contact Us</li>
+                <li class="navigation_lst" id="nav4">Services</li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="section">
+        <h1> Welcome to new World</h1>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. A atque molestias quibusdam officiis. Dolor quod expedita numquam? Aspernatur repudiandae voluptatibus incidunt ipsa. Labore!</div>
+    </section>
+    <hr>
+</body>
+</html>

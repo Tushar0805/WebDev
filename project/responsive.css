@@ -1,0 +1,34 @@
+#navbar{
+    width: 100vh;
+    flex-direction: column;
+}
+
+#home{
+    height: 400px;
+    width: 100vh;
+}
+
+#home p, #services p{
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+#services{
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#container1_sponsor{
+    width: 100vh;
+    overflow: hidden;
+}
+
+#contact{
+    width: 100vh;
+}
+
+#footer{
+    width: 100vh;
+}

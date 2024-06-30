@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        /* grid-template-columns: 300px 300px 300px; */
+        /* grid-template-columns: auto auto auto; */
+
+        /* divides the total width in 1:2:1 ratio */
+        /* grid-template-columns: 1fr 2fr 1fr; */
+
+        /* total eight and each having width of 100px */
+        grid-template-columns:  repeat(8, 100px);
+
+        /* creates a gap of 2rem around each grid */
+        grid-gap: 2rem;
+    }
+    .items{
+        background-color: red;
+        border: 2px solid black;
+        padding: 2px;
+        margin: 2px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="items">this is item-1</div>
+        <div class="items">this is item-2</div>
+        <div class="items">this is item-3</div>
+        <div class="items">this is item-4</div>
+        <div class="items">this is item-5</div>
+        <div class="items">this is item-6</div>
+        <div class="items">this is item-7</div>
+        <div class="items">this is item-8</div>
+    </div>
+</body>
+</html>

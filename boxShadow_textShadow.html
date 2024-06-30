@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            /* border: 2px solid red; */
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: coral;
+            
+            /* box-shadow: x(in px or any other unit) y(in px or any other unit) color */
+            /* value can be negative also */
+            box-shadow: 10px 10px green;
+            box-shadow: -10px -10px green;
+
+
+            /* box-shadow: x(in px or any other unit) y(in px or any other unit) blur-radius(in px) color */
+            box-shadow: 10px 10px 10px green;
+
+            /* box-shadow: x(in px or other unit) y(in px or other unit) blur-radius(in px or other unit) spred-radius(in px or other unit) color */
+            box-shadow: 10px 10px 10px 10px green;
+
+
+            /* for multiple box shadows in a single box */
+            box-shadow: 4px 4px green, 8px 8px blue, 12px 12px red;
+        }
+        .card h1{
+            /* same as box shadow , like blur-radius, spread-radius and negative value etc*/
+            text-shadow: 10px 10px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1>card 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis debitis cumque eveniet in nisi, ut, blanditiis dolor ipsa modi exercitationem iusto est nihil recusandae inventore aliquam enim soluta ratione eos laborum quam fuga earum!
+            </p>
+        </div>
+        
+        <div class="card" id="card2"> 
+            <h1>card 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis debitis cumque eveniet in nisi, ut, blanditiis dolor ipsa modi exercitationem iusto est nihil recusandae inventore aliquam enim soluta ratione eos laborum quam fuga earum!
+            </p>
+        </div>
+
+        <div class="card" id="card3"> 
+            <h1>card 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis debitis cumque eveniet in nisi, ut, blanditiis dolor ipsa modi exercitationem iusto est nihil recusandae inventore aliquam enim soluta ratione eos laborum quam fuga earum!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

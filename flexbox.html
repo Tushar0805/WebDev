@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 700px;
+            width: 100%;
+            display: flex;
+
+            flex-direction: row; /* by default flex direction is row*/
+            /* flex-direction: column;  */
+
+            /* content will wrap inside in his parent in all responsive designs */
+            flex-wrap: wrap;
+
+            /* in this both flex-direction and flex-wrap can be written in one line */
+            flex-flow: column wrap;
+            /* flex-flow: row-reverse wrap; */
+            /* flex-flow: column wrap; */
+            /* flex-flow: column wrap-reverse; */
+
+            /* center the flex items in x direction i.e. y direction me center kar deta hai */
+            justify-content: center;
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* center the flex items in y direction i.e. x directino me center kar deta hai */
+            align-items: center;
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */            
+        }
+
+        .item{
+            border: 2px solid blue;
+            background-color: tomato;
+            margin: 5px;
+            width: 90px;
+            height: 90px;
+        }
+        #item1{
+            /* Flex item having greater order will come after and item having less order will come earlier */
+            /* order can be any positive number not necessary to be consecutive */
+            order: 3;
+
+            /* this will increase the size of the item */
+            /* increase in size will depend on the flex direction */
+            /* if flex direction is row then its width will increase */
+            /* if flex directino is column then its height will increase */
+            flex-grow: 2;
+        }
+        #item2{
+
+            /* same as flex grow, but instead of growing it will decrease the size of the flex item */
+            flex-shrink: 2;
+            order: 2;
+        }
+        #item3{
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="item1">This is box1
+        </div>
+
+        <div class="item" id="item2">This is box2
+        </div>
+
+        <div class="item" id="item3">This is box3
+        </div>
+
+        <!-- <div class="item" id="item4">This is box4
+        </div>
+
+        <div class="item" id="item5">This is box5
+        </div>
+
+        <div class="item" id="item6">This is box6
+        </div> -->
+    </div>    
+</body>
+</html>

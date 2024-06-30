@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+            text-align: center;
+            color: white;
+            display: none;
+        }
+
+        @media (max-width: 500px){
+            #head1{
+                background-color: blue;
+                display: block;
+            }
+        }
+        @media (min-width: 200px) and (max-width: 600px){
+            #head2{
+                background-color: aqua;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="container" id="head1"> this is a phone</h1>
+        <h1 class="container" id="head2"> this is a tablet</h1>
+        <h1 class="container" id="head3"> this is a computer</h1>
+        <h1 class="container" id="head4"> this is a threator</h1>
+    </div>    
+</body>
+</html>
